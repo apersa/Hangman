@@ -23,10 +23,6 @@ void    afisare_cuvant(char cuvant[51]);
 int     completare_litere(char cuvant_citit[51], char cuvant_spanzuratoare[51]);
 int     verificare_underline(char cuvant_spanzuratoare[51]);
 int     verificare_litera(char litere_folosite[26], char litera);
-
-#include "afisare.cpp"
-#include "citire.cpp"
-#include "prelucrare.cpp"
-#include "verificare.cpp"
+void    citire_fisier(int optiune, char cuvant_fisier[51]);
 
 #endif // HEADER_H_INCLUDED

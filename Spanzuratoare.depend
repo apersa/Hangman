@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1493912270 source:d:\programare\spanzuratoare\main.cpp
+1540565514 source:d:\programare\spanzuratoare\main.cpp
 	"header.h"
 
-1493908954 d:\programare\spanzuratoare\header.h
+1540572132 d:\programare\spanzuratoare\header.h
 	<iostream>
 	<fstream>
 	<string.h>
@@ -10,10 +10,6 @@
 	<conio.h>
 	<time.h>
 	<cstdlib>
-	"afisare.cpp"
-	"citire.cpp"
-	"prelucrare.cpp"
-	"verificare.cpp"
 
 1493908917 d:\programare\spanzuratoare\afisare.cpp
 	"header.h"
@@ -25,5 +21,17 @@
 	"header.h"
 
 1493050293 d:\programare\spanzuratoare\verificare.cpp
+	"header.h"
+
+1493908918 source:d:\programare\spanzuratoare\afisare.cpp
+	"header.h"
+
+1540572249 source:d:\programare\spanzuratoare\citire.cpp
+	"header.h"
+
+1493050294 source:d:\programare\spanzuratoare\verificare.cpp
+	"header.h"
+
+1540571575 source:d:\programare\spanzuratoare\prelucrare.cpp
 	"header.h"
 

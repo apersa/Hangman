@@ -12,7 +12,7 @@ void    citire_cuvant(char cuvant[51])
     i = 0;
     while ((litera = getch()) != 13)
     {
-        /// Daca s-a apasat backspace se sterge o steluta
+        /// Se sterge o steluta
         if (litera == '\b' && cuvant[0] != '\0')
         {
             cuvant[i] = '\0';
@@ -20,7 +20,6 @@ void    citire_cuvant(char cuvant[51])
                 i--;
             system("cls");
             cout << "Introduceti cuvantul: ";
-            /// Verifica daca mai exista litere in cuvant
             if (strlen(cuvant) > 1)
                 for (unsigned int j = 0; j < strlen(cuvant) - 1; j++)
                     cout << '*';
@@ -39,7 +38,7 @@ void    citire_cuvant(char cuvant[51])
 /// Se memoreaza intr-o matrice cuvintele dintr-o anumita categorie din fisier
 /// in: categoria din care se alege cuvantul
 /// out: un cuvant la intamplare din fisier
-char    *citire_fisier(int optiune)
+void    citire_fisier(int optiune, char cuvant_fisier[51])
 {
     char    matrice[200][51];
     int     n;
@@ -70,6 +69,6 @@ char    *citire_fisier(int optiune)
     }
     /// Se genereaza un numar la intamplare aflat intre 1 si numarul de cuvinte din fisier
     srand (time(0));
-    random = rand () % n + 1;
-    return (matrice[random]);
+    random = rand() % n + 1;
+    strcpy(cuvant_fisier, matrice[random]);
 }

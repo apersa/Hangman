@@ -147,7 +147,7 @@ void    jucator_vs_jucator()
 void    jucator_vs_computer()
 {
     char    tasta;
-    char    *cuvant_fisier;
+    char    cuvant_fisier[51];
     char    cuvant_spanzuratoare[51];
     int     optiune;
 
@@ -167,16 +167,9 @@ void    jucator_vs_computer()
         }
         else
             optiune = tasta - '0';
-        if (optiune != 1 && optiune != 2 && optiune != 3)
-            getch();
     }while (optiune != 1 && optiune != 2 && optiune != 3);
     /// In cuvant_fisier se memoreaza cuvantul care urmeaza a fi ghicit
-    if (optiune == 1)
-        cuvant_fisier = citire_fisier(1);
-    else    if (optiune == 2)
-        cuvant_fisier = citire_fisier(2);
-    else
-        cuvant_fisier = citire_fisier(3);
+    citire_fisier(optiune, cuvant_fisier);
     strcpy(cuvant_spanzuratoare, cuvant_fisier);
     if (completare_litere(cuvant_fisier, cuvant_spanzuratoare))
         cout << "Felicitari!!! Ati gastigat." << endl << endl;

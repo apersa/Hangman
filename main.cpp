@@ -42,5 +42,5 @@ void    meniu_aplicatie()
 int main()
 {
     meniu_aplicatie();
-    return 0;
+    return (0);
 }

@@ -32,26 +32,15 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="afisare.cpp">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
+		<Unit filename="afisare.cpp" />
 		<Unit filename="animale.txt" />
-		<Unit filename="citire.cpp">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
-		<Unit filename="header.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
+		<Unit filename="citire.cpp" />
+		<Unit filename="header.h" />
 		<Unit filename="legume.txt" />
 		<Unit filename="main.cpp" />
-		<Unit filename="plante.txt" />
-		<Unit filename="prelucrare.cpp">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
+		<Unit filename="prelucrare.cpp" />
 		<Unit filename="tari.txt" />
-		<Unit filename="verificare.cpp">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
+		<Unit filename="verificare.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
